@@ -7,9 +7,10 @@ app = Flask(__name__)
 def hello_world():  # put application's code here
     return render_template('home.html')
 
-@app.route('/welcome')
+
+@app.route('/meatandfish')
 def welcome():  # put application's code here
-    return render_template('welcome.html')
+    return render_template('meatandfish.html')
 
 
 if __name__ == '__main__':
