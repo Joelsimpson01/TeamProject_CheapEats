@@ -18,5 +18,15 @@ def fruitandveg():  # put application's code here
     return render_template('fruitandveg.html')
 
 
+@app.route('/dairy')
+def dairy():  # put application's code here
+    return render_template('dairy.html')
+
+
+@app.route('/carbs')
+def carbs():  # put application's code here
+    return render_template('carbs.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
