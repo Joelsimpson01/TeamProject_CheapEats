@@ -9,8 +9,13 @@ def hello_world():  # put application's code here
 
 
 @app.route('/meatandfish')
-def welcome():  # put application's code here
+def meatandfish():  # put application's code here
     return render_template('meatandfish.html')
+
+
+@app.route('/fruitandveg')
+def fruitandveg():  # put application's code here
+    return render_template('fruitandveg.html')
 
 
 if __name__ == '__main__':
